@@ -1,0 +1,162 @@
+@media screen and (max-width: 1440px)  {
+    .container {
+        width: 1420px;  
+    }
+    .header__navigation {
+        margin-left: 33%;
+    }
+    .welcome {
+        height: 734px;
+    }
+    .welcome__content {
+        top: 82px;
+    }
+    .main__louvre {
+        width: 777px;
+        height: 645px;
+        right: -10px;
+    }
+    .tours-list {
+        grid-template-columns: 425px 425px 425px;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 70px;
+    }
+    .tours {
+        margin-bottom: 0;
+    }
+    .explore {
+        flex-direction: column;
+    }
+    .explore-content {
+        width: 100%;
+    }
+    .explore-line {
+        width: 1400px;
+    }
+    .explore-picture {
+        height: 900px;
+        width: 1120px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 130px;
+    }
+    video {
+        width: 1400px;
+    }
+    .video-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .video-text {
+        width: 100%;
+    }
+    .tickets-content {
+        flex-direction: column-reverse;
+    }
+    .tickets {
+        width: 808px;
+    }
+    .tickets-buy {
+        margin-bottom: 50px;
+    }
+    .tickets-image {
+        width: 1350px;
+        align-self: center;
+    }
+    .google-map {
+        width: 1410px;
+        height: 920px;
+    }
+    .contacts-content {
+        flex-direction: column;
+    }
+    .footer-container {
+        width: 1420px;  
+        display: grid;
+        grid-template-columns: 240px 500px 500px;
+        grid-template-rows: 1fr 1fr;
+        /* justify-content: flex-start; */
+        align-items: center;
+    
+    }
+    .footer__menu {
+        width: 300px;
+        margin-left: 200px;
+    }
+    .footer__social-media {
+        margin-left: 530px;
+    }
+    }
+    @media screen and (max-width: 1168px) {
+        .container,
+        .footer-container,
+        .big-line,
+        .explore-line {
+            width: 1160px;
+        }
+        
+        .tours-list {
+            grid-template-columns: 550px 550px;
+        }
+        .tours-pictures {
+            width: 550px;
+        }
+         
+        .explore-picture {
+            margin-left: 42px
+        }
+        video, 
+        .tickets-image,
+        .google-map {
+            width: 1160px;
+        }
+        
+        .footer__menu {
+            width: 240px;
+        }
+    } 
+    
+    @media screen and (max-width: 1024px) {
+        .container, 
+        .footer-container {
+            width: 1020px;
+            
+        }
+        .explore-picture{
+            height: 799px;
+            width: 1003px;
+            margin-left: 6px;
+        }
+        .explore-line, 
+        .big-line,
+        video,
+        .tickets-image {
+            width: 1020px;
+        }
+        .google-map {
+            width: 1020px;
+            height: 620px;
+        }
+        .footer__menu {
+            width: 200px;
+        }
+        .tours-pictures {
+            width: 500px;
+        }
+        .tours-list {
+            grid-template-columns: 500px 500px;
+        }
+        .footer-container {
+            grid-template-columns: 240px 390px 390px;
+    }
+    .footer__social-media {
+        margin-left: 351px;
+    }
+    }
+    
+    @media screen and (max-width: 760px) {
+    
+    } 
+    
