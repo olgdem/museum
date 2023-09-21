@@ -1319,6 +1319,72 @@ h4 {
 .date-and-time {
     margin-top: 60px;
 }
+
+.input {
+    width: 400px;
+    height: 45px;
+    border: solid 1px #030303;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input label {
+    color: #030303;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    display: block;
+    margin-right: 5px;
+}
+
+.input_label-name::before {
+    content: url(img/modal/name.svg);
+    width: 13px;
+    height: 15px;
+    margin-right: 15px;
+    display: block;
+    float: left;
+
+
+}
+
+.input_label-email::before {
+    content: url(img/modal/email.svg);
+    width: 13px;
+    height: 15px;
+    margin-right: 15px;
+    display: block;
+    float: left;
+}
+
+.input_label-phone::before {
+    content: url(img/modal/tel.svg);
+    width: 13px;
+    height: 15px;
+    margin-right: 15px;
+    display: block;
+    float: left;
+}
+
+.input input {
+    display: block;
+    height: 42px;
+    width: 282px;
+    font-size: 16px;
+    padding-left: 5px;
+    border: none;
+}
+
+input[name=name], input[name=email], input[name=tel] {
+
+}
 .entry-ticket {
 }
 .entry-name {
@@ -1541,48 +1607,162 @@ h4 {
     margin-right: 5px;
 }
 .modal-two-cards {
+    position: relative;
 }
-.card-front {
+.card-front, .card-background {
+    position: absolute;
     width: 360px;
     height: 211px;
-    background-color: #BCBCBC;
     border-radius: 5px;
 }
-.cards-info {
-}
-.card-number-box {
+
+.card-front {
+    background-color: #BCBCBC;
+    padding: 15px 20px;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
-.cards-number-label, .cards-expiration-label, .cardholder-name-label {
+.card-info-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards-info {
+    width: 215px;
+}
+.card-number-box {
+    margin-bottom: 10px;
+}
+
+.cards-number-label, .cards-expiration-label, .cardholder-name-label, .cvc, .cvc-number, .cvc-info {
     color: #161615;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
+    display: block;
 }
 
 .cards-number-label {
+    margin-bottom: 5px;
+}
+
+#card-number {
+    width: 215px;
+    height: 35px;
+    border: solid .5px #A4A4A3;
+    padding: 0 5px;
+    
 }
 .card-expiration-box {
 }
+
 .cards-expiration-label {
+    margin-bottom: 5px;
 }
+
+#cards-month {
+    width: 100px;
+    height: 35px;
+    border: solid .5px #A4A4A3;
+}
+
+#cards-year {
+    width: 100px;
+    height: 35px;
+    border: solid .5px #A4A4A3;
+}
+
+.cards-images {
+    width: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.visa {
+    
+    width: 55px;
+    height: 16px;
+    margin-bottom: 15px;
+}
+
+.mastercard {
+    width: 53px;
+    height: 32px;
+}
+
 .cardholder {
+    margin-top: 10px;
 }
-.cars-images {
+
+.cardholder-name-label {
+    margin-bottom: 5px;
 }
+
+#cardholder-name {
+    width: 320px;
+    height: 35px;
+    border: solid .5px #A4A4A3;
+    padding: 0 5px;
+}
+
+
+
 .card-background {
+    top: 50px;
+    left: 110px;
+    background-color: #939393;
+}
+
+.card-background-container {
+    width: 90px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    align-items: center;
 }
 .dark-line {
+    width: 100%;
+    height: 45px;
+    background-color: #161615;
+    margin-top: 25px;
 }
 .cvc {
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
 .cvc-number {
+    width: 75px;
+    height: 35px;
+    border: solid .5px #A4A4A3;
+    padding: 0 5px;
 }
 .cvc-info {
+    font-size: 10px;
+    margin-top: 6px;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+
+
+
+
+
 
 
 

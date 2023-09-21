@@ -456,6 +456,7 @@
                     <!-- data-uk-datepicker="{pos:'bottom', weekstart:0, format:'DD.MM.YYYY', locale:'en'}" -->
                     <!-- <input type="time" id="date-input"> -->
                     <select name="time" id="">
+                        <!-- <option value="">Time</option> -->
                         <option value="">8.00</option>
                         <option value="">8.30</option>
                         <option value="">9.00</option>
@@ -468,10 +469,22 @@
                         <option value="">12.30</option>
                     </select>
                 </form>
-                <form action="">
-                    <input type="text" name="name" id="name">
-                    <input type="email" name="email" id="email">
-                    <input type="tel" name="tel" id="tel">
+                <form>
+                    <div class="input">
+                        <label for="name" class="input_label-name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    
+                    <div class="input">
+                        <label for="email" class="input_label-email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    
+                    <div class="input">
+                        <label for="tel" class="input_label-phone">Phone</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    
                     <select name="ticket" id="">
                         <option value="">Permanent exhibition</option>
                         <option value="">Temporary exhibition</option>
@@ -548,51 +561,53 @@
                 </div>
                 <div class="modal-two-cards">
                     <div class="card-front">
-                        <div class="cards-info">
-                            <div class="card-number-box">
-                                <label for="card-number" class="cards-number-label">Card number</label>
-                                <input type="number" value="card-number" id="card-number">
+                        <div class="card-info-box">
+                            <div class="cards-info">
+                                <div class="card-number-box">
+                                    <label for="card-number" class="cards-number-label">Card number</label>
+                                    <input type="number" max="16" id="card-number" autocomplete="cc-number">
+                                </div>
+                                <div class="card-expiration-box">
+                                    <p class="cards-expiration-label">Expiration date</p>
+                                    <select name="cards-expiration-month" id="cards-month">
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                        <option value="">05</option>
+                                        <option value="">06</option>
+                                        <option value="">07</option>
+                                        <option value="">08</option>
+                                        <option value="">09</option>
+                                        <option value="">10</option>
+                                        <option value="">11</option>
+                                        <option value="">12</option>
+                                    </select>
+                                    <select name="cards-expiration-year" id="cards-year">
+                                        <option value="">2023</option>
+                                        <option value="">2024</option>
+                                    </select>  
+                                </div>
                             </div>
-                            <div class="card-expiration-box">
-                                <p class="cards-expiration-label">Expiration date</p>
-                                <select name="cards-expiration-month" id="cards-month">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">05</option>
-                                    <option value="">06</option>
-                                    <option value="">07</option>
-                                    <option value="">08</option>
-                                    <option value="">09</option>
-                                    <option value="">10</option>
-                                    <option value="">11</option>
-                                    <option value="">12</option>
-                                </select>
-                                <select name="cards-expiration-year" id="cards-year">
-                                    <option value="">2023</option>
-                                    <option value="">2024</option>
-                                    
-                                </select>
-                                
+                            <div class="cards-images">
+                                <img src="img/modal/Visa.svg" alt="visa name" class="visa">
+                                <img src="img/modal/Mastercard.svg" alt="mastercard name" class="mastercard">
                             </div>
-                            <div class="cardholder">
-                                <label for="cardholder-name" class="cardholder-name-label">Cardholder name</label>
-                                <input type="text" id="cardholder-name">
-                            </div>
-                            
                         </div>
-                        <div class="cars-images">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                        <div class="cardholder">
+                            <label for="cardholder-name" class="cardholder-name-label">Cardholder name</label>
+                            <input type="text" id="cardholder-name" autocomplete="additional-name">
                         </div>
 
                     </div>
                     <div class="card-background">
                         <div class="dark-line"></div>
-                        <p class="cvc">CVC/CVV</p>
-                        <input type="number" class="cvc-number">
-                        <p class="cvc-info">The last 3 or 4 digits on back of the card</p>
+                            <div class="card-background-container">
+                                <p class="cvc">CVC/CVV</p>
+                                <input type="number" class="cvc-number">
+                                <p class="cvc-info">The last 3 or 4 digits on back of the card</p>
+                            </div>
+                        
                     </div>
                 </div>
                 
