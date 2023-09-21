@@ -451,23 +451,32 @@
                 <p class="modal-caption">Tour to Louvre</p>
                 <hr class="modal-line bold">
                 <form class="date-and-time">
-                    <input type="date" name="date" id="date">
-                    <label for="date">Date</label>
+                    <div class="date-box">
+                        <label for="date">Date</label>
+                        <input type="date">
+                        <img src="img/modal/arrow_dropdownlist.svg" alt="arrow-down">
+                    </div>
+                    
                     <!-- data-uk-datepicker="{pos:'bottom', weekstart:0, format:'DD.MM.YYYY', locale:'en'}" -->
                     <!-- <input type="time" id="date-input"> -->
-                    <select name="time" id="">
-                        <!-- <option value="">Time</option> -->
-                        <option value="">8.00</option>
-                        <option value="">8.30</option>
-                        <option value="">9.00</option>
-                        <option value="">9.30</option>
-                        <option value="">10.00</option>
-                        <option value="">10.30</option>
-                        <option value="">11.00</option>
-                        <option value="">11.30</option>
-                        <option value="">12.00</option>
-                        <option value="">12.30</option>
-                    </select>
+                    <div class="time-box">
+                        <p>Time</p>
+                        <select name="time" id="" class="date-and-time_time">
+                            <option value=""></option>
+                            <option value="">8.00</option>
+                            <option value="">8.30</option>
+                            <option value="">9.00</option>
+                            <option value="">9.30</option>
+                            <option value="">10.00</option>
+                            <option value="">10.30</option>
+                            <option value="">11.00</option>
+                            <option value="">11.30</option>
+                            <option value="">12.00</option>
+                            <option value="">12.30</option>
+                        </select>
+                        
+                    </div>
+                    
                 </form>
                 <form>
                     <div class="input">
@@ -485,11 +494,17 @@
                         <input type="tel" name="tel" id="tel">
                     </div>
                     
-                    <select name="ticket" id="">
-                        <option value="">Permanent exhibition</option>
-                        <option value="">Temporary exhibition</option>
-                        <option value="">Combined Admission</option>
-                    </select>
+                    <div class="ticket-types-input">
+                        <p>Ticket Type</p>
+                        <select name="ticket">
+                            <option value=""></option>
+                            <option value="">Permanent exhibition</option>
+                            <option value="">Temporary exhibition</option>
+                            <option value="">Combined Admission</option>
+                        </select>
+                    </div>
+                      
+                    
                 </form>
                 <div class="entry-ticket">
                     <p class="entry-name">Entry ticket</p>

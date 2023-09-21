@@ -1278,7 +1278,7 @@ h4 {
     right: 30px;
 }
 .column-data {
-    width: 410px;
+    width: 400px;
     height: 663px;
     border: solid 1px #000;
 }
@@ -1318,6 +1318,76 @@ h4 {
 }
 .date-and-time {
     margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date-box {
+    width: 190px;
+    height: 45px;
+    border: solid 1px #030303;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.date-box label::before {
+    display: block;
+    content: url(img/modal/date.svg);
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.date-box img {
+    width: 15px;
+    height: 15px;
+    
+}
+
+
+
+.time-box {
+    width: 190px;
+    height: 45px;
+    border: solid 1px #030303;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.time-box p {
+    color: #030303;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.time-box p::before {
+    content: url(img/modal/time.svg);
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
 }
 
 .input {
@@ -1382,28 +1452,124 @@ h4 {
     border: none;
 }
 
+
+
+.ticket-types-input {
+    width: 400px;
+    height: 45px;
+    border: solid 1px #030303;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    color: #030303;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+} 
+
+.ticket-types-input::before{
+    display: block;
+    content: url(img/modal/ballot.svg);
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.ticket-types-input select {
+    width: 226px;
+    height: 44px;
+    font-size: 16px;
+    padding-left: 5px;
+    border: none;
+}
+
+.ticket-types-input select::after {
+    display: block;
+    content: url(img/modal/arrow.svg);
+    width: 17px;
+    height: 17px;
+}
+
+.ticket-types-input p {
+    margin-right: 5px;
+}
+
 input[name=name], input[name=email], input[name=tel] {
 
 }
 .entry-ticket {
+    width: 400px;
+    height: 135px;
+    border: solid 1px #030303;
+    padding: 10px 15px;
 }
 .entry-name {
+    color: #9D8665;
+font-family: Forum;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+margin-bottom: 5px;
 }
 .columns-ticket-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
 }
 .types-name {
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 .types-caption {
+    
+
 }
 .types-counter {
+    width: 105px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .types-amount {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px #030303;
 }
 .types-amount-btn {
+    width: 35px;
+    height: 25px;
+    background-color: #030303;
+    color: #fff;
+    border: solid 1px #030303;
+    font-size: 24px;
+    text-align: center;
 }
 .modal-minus {
 }
 .input-modal-amount {
+    width: 35px;
+    height: 25px;
+    color: #030303;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
 }
 .modal-plus {
 }
