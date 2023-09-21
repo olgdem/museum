@@ -2,6 +2,8 @@
 
 ## Address of the site: https://olgdem.github.io/museum/
 
+This website is not finished jet, I`m working on adaprive design and modal
+
 This website I made to master such technologies as:
 
 ![](https://img.shields.io/badge/-HTML-000000)
