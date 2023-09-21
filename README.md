@@ -2,7 +2,7 @@
 
 ## Address of the site: https://olgdem.github.io/museum/
 
-This website is not finished jet, I`m working on adaprive design and modal
+This website is not finished jet, I`m still working at adaprive design and modal
 
 This website I made to master such technologies as:
 
